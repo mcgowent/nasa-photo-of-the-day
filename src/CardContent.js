@@ -16,12 +16,12 @@ function CardContent() {
       .get(
         "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-07-15"
       )
-      .then(res => {
-        setCopyData(res.data.copyright);
-        setDateData(res.data.date);
-        setExplanationData(res.data.explanation);
-        setUrlData(res.data.url);
-        setTitleData(res.data.title);
+      .then(e => {
+        setCopyData(e.data.copyright);
+        setDateData(e.data.date);
+        setExplanationData(e.data.explanation);
+        setUrlData(e.data.url);
+        setTitleData(e.data.title);
       });
     console.log("");
   }, []);
