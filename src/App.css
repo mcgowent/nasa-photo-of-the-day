@@ -1,21 +1,31 @@
 .App {
   text-align: center;
+  margin: 150px auto;
 }
+.parent img {
+  width:500px;
+  height: 500px;
+  border-radius: 12px;
+}
+
 
 .parent {
   display: flex;
   color: white;
 }
 .parent div {
-  margin: 0 10px;
+  margin: auto;
   padding-right: 10px;
 }
-
+.textBox {
+  width:800px;
+}
 .cardStyle {
   background: rgb(83, 108, 192);
+  width:70%;
+
   padding: 20px;
   border-radius: 12px;
-  height: auto;
   margin: auto;
 }
 

@@ -21,11 +21,13 @@ function Data() {
 
   console.log(data);
   return (
-    <div>
-      <h1><Title title={data.title} /></h1>
-      <h2>By<Copyright copyright={data.copyright} /></h2>
-      <h3><Date date={data.date} /></h3>
-      <Explanation explanation={data.explanation} />
+    <div className="parent">
+      <div className="textBox">
+        <h1><Title title={data.title} /></h1>
+        <h2>By<Copyright copyright={data.copyright} /></h2>
+        <h3><Date date={data.date} /></h3>
+        <Explanation explanation={data.explanation} />
+      </div>
       <Url url={data.url} />
     </div>
   );
