@@ -2,6 +2,24 @@
   text-align: center;
 }
 
+.parent {
+  display: flex;
+  color: white;
+}
+.parent div {
+  margin: 0 10px;
+  padding-right: 10px;
+}
+
+.cardStyle {
+  background: rgb(83, 108, 192);
+  padding: 20px;
+  border-radius: 12px;
+  height: auto;
+  margin: auto;
+}
+
+/* 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -30,4 +48,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

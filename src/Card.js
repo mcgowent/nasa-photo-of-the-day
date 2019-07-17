@@ -4,7 +4,11 @@ import CardContent from "./CardContent";
 import "./App.css";
 
 function Card() {
-  return <CardContent />;
+  return (
+    <div className="cardStyle">
+      <CardContent />;
+    </div>
+  );
 }
 
 export default Card;
