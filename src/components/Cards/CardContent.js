@@ -3,7 +3,7 @@ import Data from "../../Data"
 
 function CardContent() {
   return (
-    <div className="parent">
+    <div className="cardStyle">
       <Data />
     </div>
   );

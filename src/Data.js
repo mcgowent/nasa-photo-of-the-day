@@ -16,17 +16,15 @@ function Data() {
       .then(e => {
         setData(e.data);
       })
-      .catch(err => { return 'nothing', err })
+      .catch(err => { return 'nothing' })
   }, []);
-
 
   console.log(data);
   return (
-    <div className="parent">
-      <Title title={data.title} />
-      <Copyright copyright={data.copyright} />
-      console.log({data.copyright})
-      <Date date={data.date} />
+    <div>
+      <h1><Title title={data.title} /></h1>
+      <h2>By<Copyright copyright={data.copyright} /></h2>
+      <h3><Date date={data.date} /></h3>
       <Explanation explanation={data.explanation} />
       <Url url={data.url} />
     </div>
