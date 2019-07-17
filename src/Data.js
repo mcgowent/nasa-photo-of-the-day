@@ -12,20 +12,20 @@ function Data() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(
-        "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-07-15"
-      )
+    axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-07-15")
       .then(e => {
         setData(e.data);
-      });
-    console.log("");
+      })
+      .catch(err => { return 'nothing', err })
   }, []);
 
+
+  console.log(data);
   return (
     <div className="parent">
       <Title title={data.title} />
       <Copyright copyright={data.copyright} />
+      console.log({data.copyright})
       <Date date={data.date} />
       <Explanation explanation={data.explanation} />
       <Url url={data.url} />

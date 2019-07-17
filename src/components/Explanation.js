@@ -1,7 +1,7 @@
 import React from "react";
 
 const Explanation = ({ explanation }) => {
-  <div>{explanation}</div>;
+  return <div>{explanation}</div>;
 };
 
 export default Explanation;

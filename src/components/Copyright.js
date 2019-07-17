@@ -1,7 +1,8 @@
 import React from "react";
 
 const Copyright = ({ copyright }) => {
-  <div>{copyright}</div>;
+  // console.log({ copyright });
+  return <div>{copyright}</div>;
 };
 
 export default Copyright;
