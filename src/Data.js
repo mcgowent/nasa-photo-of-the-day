@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CardContent from "./components/Cards/CardContent"
-import { Divider } from "semantic-ui-react";
 
 
 function Data() {
@@ -14,8 +13,9 @@ function Data() {
       .then(e => {
         setData(e.data);
       })
-      .catch(err => { return 'nothing', err })
+      .catch(err => { return 'nothing' })
   }, []);
+
   return (
     <div>
       {data ?
