@@ -6,6 +6,7 @@ import Date from "./components/Date";
 import Copyright from "./components/Copyright";
 import Explanation from "./components/Explanation";
 
+
 function Data() {
   // Pull in the date and then break it into parts to be passed into
   // the card and then rendered into the App
@@ -30,6 +31,9 @@ function Data() {
       </div>
       <Url url={data.url} alt={data.title} />
     </div>
+
+
+
   );
 }
 
