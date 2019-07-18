@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Title from "./components/Title";
-import Url from "./components/Url";
-import Date from "./components/Date";
-import Copyright from "./components/Copyright";
-import Explanation from "./components/Explanation";
+import CardContent from "./components/Cards/CardContent"
+import { Divider } from "semantic-ui-react";
+
 
 function Data() {
   // Pull in the date and then break it into parts to be passed into
@@ -18,19 +16,23 @@ function Data() {
       })
       .catch(err => { return 'nothing', err })
   }, []);
-
-  console.log(data);
   return (
-    <div className="parent">
-      <div className="textBox">
-        <h1><Title title={data.title} /></h1>
-        <h2>By<Copyright copyright={data.copyright} /></h2>
-        <h3><Date date={data.date} /></h3>
-        <Explanation explanation={data.explanation} />
-      </div>
-      <Url url={data.url} alt={data.title} />
+    <div>
+      {data ?
+        <CardContent
+          title={data.title}
+          url={data.url}
+          copyright={data.copyright}
+          explanation={data.explanation}
+          date={data.date} />
+        :
+        <div>Loading...</div>
+      }
     </div>
-  );
+
+
+
+  )
 }
 
 export default Data;

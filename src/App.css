@@ -1,34 +1,13 @@
 .App {
-  text-align: center;
-  margin: 150px auto;
-}
-.parent img {
-  width:500px;
-  height: 500px;
-  border-radius: 12px;
+  display:flex;
+  justify-content: center;
+  margin: 20px auto;
+
 }
 
-
-.parent {
-  display: flex;
-  color: white;
+.ui.card {
+  width: 500px;
 }
-.parent div {
-  margin: auto;
-  padding-right: 10px;
-}
-.textBox {
-  width:800px;
-}
-.cardStyle {
-  background: rgb(83, 108, 192);
-  width:70%;
-
-  padding: 20px;
-  border-radius: 12px;
-  margin: auto;
-}
-
 /* 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

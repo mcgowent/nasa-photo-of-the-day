@@ -1,13 +1,28 @@
 import React from "react";
-import Data from "../../Data"
+import { Card, Icon, Image, Divider } from 'semantic-ui-react'
 
-
-function CardContent() {
+function CardContent(props) {
   return (
-    <div className="cardStyle">
-      <Data />
+    <div>
+      <Card className="card">
+        <Image src={props.url} wrapped ui={false} />
+        <Card.Content>
+          <Card.Header>{props.copyright}</Card.Header>
+          <Card.Meta>
+            <span className='date'>{props.date}</span>
+          </Card.Meta>
+          <Card.Description>
+            {props.explanation}
+          </Card.Description>
+        </Card.Content>
+        <Card.Content extra>
+          <a>
+            <Icon name='user' />
+            nasa.gov
+          </a>
+        </Card.Content>
+      </Card>
     </div>
-  );
-}
-
-export default CardContent;
+  )
+};
+export default CardContent
