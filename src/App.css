@@ -2,7 +2,12 @@
   display:flex;
   justify-content: center;
   margin: 20px auto;
+}
 
+h1 {
+  font-size:25px;
+  padding:10px;
+  margin:auto;
 }
 
 .content{
@@ -11,5 +16,5 @@
 
 .ui.card {
   width: 500px;
-  background:rgb(146, 148, 180);
+  background:rgb(245, 243, 241);
 }
