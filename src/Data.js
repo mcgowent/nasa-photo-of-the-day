@@ -16,7 +16,7 @@ function Data() {
       .then(e => {
         setData(e.data);
       })
-      .catch(err => { return 'nothing' })
+      .catch(err => { return 'nothing', err })
   }, []);
 
   console.log(data);
@@ -28,7 +28,7 @@ function Data() {
         <h3><Date date={data.date} /></h3>
         <Explanation explanation={data.explanation} />
       </div>
-      <Url url={data.url} />
+      <Url url={data.url} alt={data.title} />
     </div>
   );
 }

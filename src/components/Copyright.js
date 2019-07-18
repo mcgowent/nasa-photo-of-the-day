@@ -1,8 +1,8 @@
 import React from "react";
 
-const Copyright = ({ copyright }) => {
+function Copyright(props) {
   // console.log({ copyright });
-  return <div>{copyright}</div>;
+  return <div>{props.copyright}</div>;
 };
 
 export default Copyright;

@@ -1,7 +1,7 @@
 import React from "react";
 
-const Explanation = ({ explanation }) => {
-  return <div>{explanation}</div>;
+function Explanation(props) {
+  return <div>{props.explanation}</div>;
 };
 
 export default Explanation;

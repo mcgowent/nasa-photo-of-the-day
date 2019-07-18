@@ -1,7 +1,7 @@
 import React from "react";
 
-const Url = ({ url }) => {
-  return <img src={url} ></img >;
+function Url(props) {
+  return <img src={props.url} alt={props.titles} ></img >;
 };
 
 export default Url;
