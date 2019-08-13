@@ -1,10 +1,11 @@
 import React from "react";
-import { Card, Icon, Image, Divider } from 'semantic-ui-react'
+import { Card, Icon, Image } from 'semantic-ui-react'
 
 function CardContent(props) {
   return (
     <div>
       <Card className="card">
+        <h1>{props.title}</h1>
         <Image src={props.url} wrapped ui={false} />
         <Card.Content>
           <Card.Header>{props.copyright}</Card.Header>
